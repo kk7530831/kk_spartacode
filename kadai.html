@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <title>Spartapedia</title>
+
+  <style>
+    .mytitle {
+      width: 100%;
+      height: 250px;
+
+      background-image:  url('https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg');
+      background-position: center;
+      background-size: cover;
+
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .mytitle>button {
+      width: 200px;
+      height: 50px;
+
+      background-color: transparent;
+      color: white;
+
+      border-radius: 50px;
+      border: 1px solid white;
+
+      margin-top: 10px;
+    }
+    .mycards {
+            margin: 20px auto 0px auto;
+            width: 95%;
+            max-width: 1200px;
+        }
+
+        .mypost {
+            width: 95%;
+            max-width: 500px;
+            margin: 20px auto 0px auto;
+            padding: 20px;
+            box-shadow: 0px 0px 3px 0px gray;
+        }
+    .mytitle>button:hover {
+      border: 2px solid white;
+    }
+    .forms-buttons{
+        justify-content: center;
+        display: flex;
+    }
+  </style>
+</head>
+
+
+
+
+<body>
+    <body>
+        <div class="mytitle">
+            <h1>My favorite movies</h1>
+            <button>Save a new movie</button>
+        </div>
+        <div class="mypost">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label"></label>
+                  <input type="movie-url" class="form-control" placeholder="Movie URL" id="exampleMovieUrl" aria-describedby="movieUrl">
+                </div>
+                <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect02">Stars</label>
+                    <select class="form-select" id="inputGroupSelect02">
+                      <option selected>--Select a rating-------</option>
+                      <option value="1">⭐</option>
+                      <option value="2">⭐⭐</option>
+                      <option value="3">⭐⭐⭐</option>
+                      <option value="4">⭐⭐⭐⭐</option>
+                      <option value="5">⭐⭐⭐⭐⭐</option>
+                    </select>
+                  </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label"></label>
+                  <input type="comment" class="form-control" placeholder="Comment" id="comment">
+                </div>
+                <div class="forms-buttons">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                    <button type="submit" class="btn btn-secondary">Close</button>
+    
+                </div>
+              </form>
+        </div>
+        <div class="mycards">
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazing Movie</h5>
+                            <p class="card-text">This is a fake description of this great movie!</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">This is my comment haha lolol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazing Movie</h5>
+                            <p class="card-text">This is a fake description of this great movie!</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">This is my comment haha lolol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazing Movie</h5>
+                            <p class="card-text">This is a fake description of this great movie!</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">This is my comment haha lolol.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDYxNjQyMjAtNTdiOS00NGYwLWFmNTAtNThmYjU5ZGI2YTI1XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Amazing Movie</h5>
+                            <p class="card-text">This is a fake description of this great movie!</p>
+                            <p>⭐⭐⭐</p>
+                            <p class="mycomment">This is my comment haha lolol.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
